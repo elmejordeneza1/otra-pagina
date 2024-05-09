@@ -1,0 +1,123 @@
+<html lang="en">
+<head>
+    <title>MENU AVA</title>
+    
+</head>
+<body>
+    <font face="CENTURY" color="#BF360C" size="10">AVA</font>
+    <br>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENU AVA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENU AVA</title>
+<style>
+    .separator {
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .boton-container {
+        text-align: center;
+    }
+    .boton {
+        display: inline-block;
+        margin-right: 10px; 
+        padding: 10px 20px;
+        background-color: hwb(27 49% 15%);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .boton:last-child {
+        margin-right: 0; 
+    }
+    .boton:hover {
+        background-color: hwb(27 49% 15%);
+    }
+
+    /* Estilos para los cuadros adicionales */
+    .cuadro-largo {
+        max-width: 200px;
+        height: 400px;
+        background-color: hwb(0 100% 0%);
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+
+    .cuadro-grande {
+        width: 60%;
+        max-width: 600px; /* Ajustamos el ancho máximo */
+        background-color: hwb(0 100% 0%);
+        border: 2px solid #ccc;
+        border-radius: 10px;
+        display: inline-block;
+        margin-right: 20px;
+        text-align: center; /* Centramos el contenido */
+        vertical-align: top;
+    }
+    cuadro-grande {
+        display: flex;
+        align-items: flex-start; /* Alinear los elementos al inicio */
+    }
+
+    /* Estilos para las secciones de texto e imágenes */
+    .texto-container, .imagen-container {
+        flex: 1; /* Hacer que cada sección tome el mismo espacio */
+        padding: 10px; /* Espacio interno */
+    }
+
+    /* Estilos adicionales para los elementos dentro de los contenedores */
+    .texto-container h2, .imagen-container h2 {
+        margin-top: 0;
+    }
+
+    .imagen-container img {
+        width: 100px; /* Ancho máximo de las imágenes */
+        margin-bottom: 10px; /* Espacio entre las imágenes */
+    }
+</style>
+    <hr color="#3E2723">
+    <center><div class="cuadro-grande">
+        <div class="boton-container"> <!-- Contenedor para centrar los botones -->
+            <button class="boton">ROPA</button>
+            <button class="boton">GORRAS</button>
+            <button class="boton">TENIS</button>
+            <button class="boton">ACCESORIOS</button>
+            <button class="boton">AYUDA</button>
+        </div></center>
+<br>
+<br>
+<center>
+<div class="cuadro-largo">
+    Contenido del cuadro largo
+</div>
+<div class="cuadro-grande">
+   <!-- Parte izquierda para texto -->
+   <div class="texto-container">
+    <h2>Texto</h2>
+    <p>Este es un ejemplo de texto dentro del cuadro.</p>
+</div>
+<!-- Parte derecha para imágenes -->
+<div class="imagen-container">
+    <h2>Imágenes</h2>
+    <!-- Aquí puedes colocar tus imágenes -->
+    <img src="imagen1.jpg" alt="Imagen 1">
+    <img src="imagen2.jpg" alt="Imagen 2">
+    <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+<div class="separator"></div>
+</div>
+<!-- Cuadro igual al de la izquierda en la derecha -->
+<div class="cuadro-largo">
+    Contenido del cuadro largo
+</div></center>
+</body>
+</html>

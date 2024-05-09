@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU AVA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f0f0;
+        }
+.separator {
+            width: 100%;
+            height: 1px;
+            background-color: #000;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+.boton-container {
+            text-align: center;
+        }
+.boton {
+            display: inline-block;
+            margin-right: 10px; 
+            padding: 10px 20px;
+            background-color:  hwb(27 49% 15%);
+            color: black;
+            border: 2px solid #613415;
+            border-radius: 5px;
+            cursor: pointer;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra alrededor del texto */
+        }
+.boton:last-child {
+            margin-right: 0; 
+        }
+.boton:hover {
+            background-color: hwb(27 49% 15%);
+        }
+.cuadro-grande {
+            width: 100%; /* Ajustado para ocupar todo el ancho disponible */
+            max-width: 800px; /* Ajustado para ampliar el cuadro */
+            background-color: hwb(0 99% 1%);
+            border: 1px solid #000000;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            color: black; /* Cambiado a negro */
+        }
+.texto-container {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+        }
+.imagen-container {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+.login-button-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+.creadores-info {
+            width: 100%;
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+.texto-descuento {
+            width: 200px; /* Ancho del cuadro */
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #000000;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: black;
+  }
+.flecha {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid #000;
+            margin: 0 10px;
+        }
+/* Estilo modificado para el botón "ROPA" */
+.boton-ropa {
+            background-color: black; /* Color café oscuro */
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra alrededor del texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-button-container">
+        <button id="loginButton" class="boton" onclick="login()">Iniciar Sesión</button>
+    </div>
+    <button class="boton" onclick="redirigirAMenuPrincipal()">AVA</button>
+    <br>
+    <hr color="#3E2723">
+    <center>
+        <div class="cuadro-grande">
+            <div class="boton-container">
+                <button class="boton boton-ropa" onclick="window.location.href = 'ropa.html';">ROPA</button>
+                <button class="boton" onclick="window.location.href = 'gorras.html';">GORRAS</button>
+                <button class="boton" onclick="window.location.href = 'tenis.html';">TENIS</button>
+                <button class="boton" onclick="window.location.href = 'accesorios.html';">ACCESORIOS</button>
+                <button class="boton" onclick="window.location.href = 'ayuda.html';">AYUDA</button>
+            </div>
+        </div>
+    </center>
+    <br>
+    <br>
+    <center>
+        <div class="cuadro-grande">
+            <div class="imagen-container">
+                <h2>Ofertas</h2>
+
+                <div class="texto-descuento">
+                    Descuento del 70%
+                    <br>
+                    Envío gratis hasta el día lunes 13 de mayo.
+                </div>
+                <span class="flecha"></span>
+            </div>
+        </div>
+    </center>
+    <!-- Apartado de información sobre los creadores -->
+    <div class="creadores-info">
+        <h2>Información sobre los creadores</h2>
+        <p>Esta página fue creada con pasión y dedicación por un equipo de diseñadores y desarrolladores comprometidos con la creación de experiencias de usuario excepcionales. Agradecemos tu visita y esperamos brindarte una experiencia de compra en línea excepcional.</p>
+    </div>
+    <script>
+        function login() {
+            window.location.href = 'usuario.html';
+        }
+        function redirigirAMenuPrincipal() {
+            window.location.href = 'menu.html'; // Asegúrate de cambiar 'menu.html' por la ruta correcta de tu menú principal
+        }
+    </script>
+</body>
+</html>
